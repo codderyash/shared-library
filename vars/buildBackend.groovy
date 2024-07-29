@@ -11,7 +11,7 @@ def call(body) {
 
               checkout([$class: 'GitSCM', branches: [[name: '*/main']],
                                   userRemoteConfigs: [[url: 'https://github.com/codderyash/terraform-pipeline-test-2.git']],
-                                  extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: './terraform-pipeline-2']]])
+                                  extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: './terraform-pipeline-test-2']]])
          }
         
       

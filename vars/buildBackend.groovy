@@ -9,9 +9,7 @@ def call(body) {
         stage('Checkout') {
              checkout scm
 
-              checkout([$class: 'GitSCM', branches: [[name: '*/main']],
-                                  userRemoteConfigs: [[url: 'https://github.com/codderyash/terraform-pipeline-test-2.git']],
-                                  extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: './terraform-pipeline-test-2']]])
+            //    bat 'git submodule update --init --recursive'
          }
         
       

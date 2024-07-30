@@ -9,7 +9,7 @@ def call(body) {
         stage('Checkout') {
              checkout scm
 
-            //    bat 'git submodule update --init --recursive'
+                bat 'git submodule update --init --recursive'
          }
         
       

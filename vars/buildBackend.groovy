@@ -20,7 +20,7 @@ def call(body) {
 
             dir('./terraform-pipeline-test-2'){
   withCredentials([[$class: 'AmazonWebServicesCredentialsBinding',
-                    credentialsId: '16552b1e-b971-4018-93f4-abee8968c654',
+                    credentialsId: 'Aws Credentials',
                     accessKeyVariable: 'AWS_ACCESS_KEY_ID', 
                     secretKeyVariable: 'AWS_SECRET_ACCESS_KEY'
                 ]]){
